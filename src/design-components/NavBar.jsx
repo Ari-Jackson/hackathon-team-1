@@ -23,17 +23,18 @@ export default function NavBar() {
       window.addEventListener("scroll", changeColor)
     },[])
   return (
-    <nav style={{backgroundColor: `${color}`}} className="border-gray-200 grid grid-cols-2 text-cyan-800 mx-24 my-9    left-0 top-0 w-full z-10 ease-in duration-300">
+    <nav style={{backgroundColor: `${color}`}} className="border-gray-200 grid grid-cols-2 text-cyan-800 mx-24 my-9  p-4 bg-gray-400 flex">
+       <a className="hover:translate-y-[-4px] transition-transform">Logo</a>
       <div className="flex justify-end font-h1 text-2xl    max-w[1240px] m-auto flex justify-between items-center p-4 ">
-        <a>Logo</a>
+        
 
-        <ul style={{color: `${textColor}`}} className="hidden sm:flex ">
-          <li className="hover:text-indigo-500 mx-auto">
+        <ul style={{color: `${textColor}`}} className="gap-6 hidden sm:flex ">
+          <li className="hover:text-indigo-500 mx-auto hover:translate-y-[-4px] transition-transform">
             <a href="/about">About</a>
           </li>
-          {/* <li className="hover:text-indigo-500">
-            <a href="#projects"><Resources></Resources></a>
-          </li> */}
+          <li className="hover:text-indigo-500 mx-auto hover:translate-y-[-4px] transition-transform">
+            <a href="#projects">Resources</a>
+          </li>
           {/* <li className="hover:text-indigo-500">
             <a href="/contact">Contact</a>
           </li> */}
