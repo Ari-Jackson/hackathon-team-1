@@ -17,7 +17,7 @@ import Footer from './Commons/Footer';
 
 
 
-function App() {
+export default function App() {
   const [count, setCount] = useState(0)
 
   return (
