@@ -1,7 +1,10 @@
+import GoogleTranslate from "./GoogleTranslate"
+
 const Header = () => {
     return (
         <div>
-            This is the header
+          <h5>Please Select A Language</h5>  
+            <GoogleTranslate/>
         </div>
     )
 }
