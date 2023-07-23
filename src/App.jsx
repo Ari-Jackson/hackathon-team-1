@@ -16,6 +16,7 @@ import About from "./Components/About";
 import Resources from "./Components/Resources";
 import SignIn from "./Components/SignIn";
 import Footer from "./Commons/Footer";
+import CalculateChildAge from "./Components/CalculateChildAge";
 
 
 
@@ -28,7 +29,9 @@ export default function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/resources" element={<Resources/>}/>
-          <Route path="/sign-in" element={<SignIn/>}/>     
+          <Route path="/sign-in" element={<SignIn/>}/> 
+          <Route path="/child-age" element={<CalculateChildAge/>}/> 
+
         </Routes>
         <Footer/>
       </BrowserRouter>
