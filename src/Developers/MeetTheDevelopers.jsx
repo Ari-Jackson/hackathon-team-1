@@ -6,7 +6,8 @@ import AriunaaReading from '../Images/AriunaaReading.jpeg'
 import DiandreGym from '../Images/DiandreGym.jpeg'
 import MeetDevelopers from '../Images/MeetDevelopers.jpeg'
 import AriDogs from '../Images/AriDogs.jpeg'
-import TaylorGardening from '../Images/TaylorGardening.jpeg'
+import TaylorAndDaughter from '../Images/TaylorAndDaughter.jpeg'
+
 
 
 const MeetTheDevelopers = () => {
@@ -38,7 +39,7 @@ const MeetTheDevelopers = () => {
             />
             <Taylor />
 
-            <img src={TaylorGardening}
+            <img src={TaylorAndDaughter}
                 alt='Taylor Gardening'
                 width='1140px'
             />
