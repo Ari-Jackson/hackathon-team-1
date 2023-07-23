@@ -1,8 +1,12 @@
 const Ari = () => {
     return (
         <p>
-            This is Ari&apos; story
-            GitHub: <a href="https://github.com/Ari-Jackson">https://github.com/Ari-Jackson</a>
+            This is Ari's story
+            <br/>
+            <a href="https://github.com/Ari-Jackson">GitHub</a>
+            <br/>
+            <a href='https://www.linkedin.com/in/ari-j-jackson/'>LinkedIn</a>
+            <br/>
             Get another other social media that is wanted
         </p>
     )
