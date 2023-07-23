@@ -5,6 +5,8 @@ import Taylor from "./Taylor"
 import AriunaaReading from '../Images/AriunaaReading.jpeg'
 import DiandreGym from '../Images/DiandreGym.jpeg'
 import MeetDevelopers from '../Images/MeetDevelopers.jpeg'
+import AriDogs from '../Images/AriDogs.jpeg'
+import TaylorGardening from '../Images/TaylorGardening.jpeg'
 
 
 const MeetTheDevelopers = () => {
@@ -18,6 +20,12 @@ const MeetTheDevelopers = () => {
             <h1>Learn More About Us</h1>
             
             <Ari />
+
+            <img src={AriDogs}
+                alt="Ari and his dogs"
+                height='700px'
+            />
+
             <Ariunaa />
             <img src={AriunaaReading}
                 alt='Ariunaa Reading'
@@ -29,6 +37,11 @@ const MeetTheDevelopers = () => {
                 height='700px'
             />
             <Taylor />
+
+            <img src={TaylorGardening}
+                alt='Taylor Gardening'
+                width='1140px'
+            />
         </div>
     )
 }
