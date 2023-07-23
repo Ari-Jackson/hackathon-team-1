@@ -1,10 +1,19 @@
 const Taylor = () => {
     return (
-        <div>
+        <p>
             This is Taylor's story
-            GitHub Link: <a href="https://github.com/taylorbrooks007">https://github.com/taylorbrooks007</a>
+            <br /> <br />
+            <a href="https://github.com/taylorbrooks007" target="_blank">
+                GitHub Link
+            </a>
+
+            <a href="https://www.linkedin.com/in/taylorybrooks/" target="_blank">
+                LinkedIn
+            </a>
+            
+            <br /> <br />
             Get another other social media that is wanted
-        </div>
+        </p>
     )
 }
 

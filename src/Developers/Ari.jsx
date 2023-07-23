@@ -1,10 +1,14 @@
 const Ari = () => {
     return (
-        <div>
+        <p>
             This is Ari's story
-            GitHub: <a href="https://github.com/Ari-Jackson">https://github.com/Ari-Jackson</a>
+            <br/>
+            <a href="https://github.com/Ari-Jackson">GitHub</a>
+            <br/>
+            <a href='https://www.linkedin.com/in/ari-j-jackson/'>LinkedIn</a>
+            <br/>
             Get another other social media that is wanted
-        </div>
+        </p>
     )
 }
 
