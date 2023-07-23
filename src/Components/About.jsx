@@ -1,10 +1,8 @@
-const About = () => {
-    return (
-        <h1>
-            This is the about page will talk about mission statement and
-            problem we are looking to solve
-        </h1>
-    )
+import Description from "../DesignComponents/Description";
+export default function About() {
+  return (
+    <div className="mb-52">
+      <Description />
+    </div>
+  );
 }
-
-export default About

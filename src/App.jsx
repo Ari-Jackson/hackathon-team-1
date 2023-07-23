@@ -1,43 +1,44 @@
-import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+//Components
+import Home from "./Components/Home";
+import NavBar from "./Components/NavBar";
+
 
 //Pages
-import CalculateChildAge from './Components/CalculateChildAge';
-import MeetTheDevelopers from './Developers/MeetTheDevelopers';
-import Home from './Components/Home';
-import FourOFour from './Components/Four0Four';
+// import CalculateChildAge from './Components/CalculateChildAge';
+// import MeetTheDevelopers from './Developers/MeetTheDevelopers';
+// import Home from './Components/Home';
+// import FourOFour from './Components/Four0Four';
 
 //Commons
-
-import Header from './Commons/Header';
-import Footer from './Commons/Footer';
+import About from "./Components/About";
+import Resources from "./Components/Resources";
+import SignIn from "./Components/SignIn";
+import Footer from "./Commons/Footer";
 
 
 
 export default function App() {
-
   return (
-    <>
+    <div className="bg-gradient-to-r from-[#c4ff6c] to-[#2ae200] my-0  h-[100%]">
       <BrowserRouter>
-        
-        <Header/>
-
+      <NavBar/>
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/child-age' element={<CalculateChildAge />} />
-          <Route path='/meet-the-developers' element={<MeetTheDevelopers />} />
-          <Route path='/*' element={<FourOFour />} />
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/resources" element={<Resources/>}/>
+          <Route path="/sign-in" element={<SignIn/>}/>     
         </Routes>
-
         <Footer/>
       </BrowserRouter>
-
-
-      <div>
-       
-     
-      </div>
-     
-    </>
+    </div>
   );
+}
+
+{
+  /* <Route path='/' element={<Home/>} />
+          <Route path='/child-age' element={<CalculateChildAge />} />
+          <Route path='/meet-the-developers' element={<MeetTheDevelopers />} />
+          <Route path='/*' element={<FourOFour />} /> */
 }
