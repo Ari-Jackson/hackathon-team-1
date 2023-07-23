@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import data from "../data/Form30Month.json";
+import data from "../data/36Month.json";
 
 export default function Form() {
   const [currentSection, setCurrentSection] = useState(1);
