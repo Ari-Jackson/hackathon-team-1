@@ -21,16 +21,13 @@ const CalculateChildAge = () => {
     }
 
     return (
-        <div>
-
-            <h2>Please Select Your Child's Age</h2>
+        <div className="h-screen">
+            <h2>Please Select Your Child Age</h2>
             <input
                 type='date'
                 value={birthday}
                 onChange={(e) => setBirthday(e.target.value)}
-            />
-
-            
+            />     
             <button onClick={calculateAge}>Submit</button>
             {typeof age === 'number' ? <h3>Age In Months: {age} months</h3> : <h3>{age}</h3>}
         </div>

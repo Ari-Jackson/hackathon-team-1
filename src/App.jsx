@@ -1,34 +1,54 @@
-import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+//Components
+import Home from "./Components/Home";
+import NavBar from "./components/NavBar";
 
 //Pages
-import CalculateChildAge from "./Components/CalculateChildAge";
-import MeetTheDevelopers from "./Developers/MeetTheDevelopers";
-import Home from "./Components/Home";
-import FourOFour from "./Components/Four0Four";
+// import CalculateChildAge from './Components/CalculateChildAge';
+// import MeetTheDevelopers from './Developers/MeetTheDevelopers';
+// import Home from './Components/Home';
+// import FourOFour from './Components/Four0Four';
 
 //Commons
+import About from "./components/About";
+import SignIn from "./components/SignIn";
+import Resources from "./components/Resources";
 
-import Header from "./Commons/Header";
 import Footer from "./Commons/Footer";
+import CalculateChildAge from "./Components/CalculateChildAge";
+
+
+
+//import { useState } from "react";
+
+//Pages
+
+// import MeetTheDevelopers from "./Developers/MeetTheDevelopers";
+
+// import FourOFour from "./Components/Four0Four";
+
+// //Commons
+
+// import Header from "./Commons/Header";
+
 
 export default function App() {
   return (
-    <>
+    <div className="bg-gradient-to-r from-[#c4ff6c] to-[#2ae200] my-0  h-[100%]">
       <BrowserRouter>
-        <Header />
-
+      <NavBar/>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/child-age" element={<CalculateChildAge />} />
-          <Route path="/meet-the-developers" element={<MeetTheDevelopers />} />
-          <Route path="/*" element={<FourOFour />} />
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/resources" element={<Resources/>}/>
+          <Route path="/sign-in" element={<SignIn/>}/> 
+          <Route path="/child-age" element={<CalculateChildAge/>}/> 
         </Routes>
-
-        <Footer />
+        <Footer/>
       </BrowserRouter>
-
-      <div></div>
-    </>
+    </div>
   );
 }
+
