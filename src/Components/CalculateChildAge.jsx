@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CalculateChildAge = () => {
     const [birthday, setBirthday] = useState('')
@@ -20,6 +21,12 @@ const CalculateChildAge = () => {
         }
     }
 
+    const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/form");
+  };
+
     return (
         <div className="h-screen">
             <h2>Please Select Your Child Age</h2>
@@ -30,6 +37,12 @@ const CalculateChildAge = () => {
             />     
             <button onClick={calculateAge}>Submit</button>
             {typeof age === 'number' ? <h3>Age In Months: {age} months</h3> : <h3>{age}</h3>}
+            <button
+          onClick={handleClick}
+          className="w-full py-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto"
+        >
+          Let&apos;s Start
+        </button>
         </div>
     )
 }
