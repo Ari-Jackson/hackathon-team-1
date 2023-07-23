@@ -1,6 +1,10 @@
-const About = () => {
+
+export default function About() {
+
     return (
-        <p>
+      <div className="mb-52">
+      {/* <Description /> */}
+      <p>
             Due to the pandemic, many parents have not had the usual 
             opportunities to confirm that their child is reaching developmental 
             milestones. As a result, schools are seeing unprecedented numbers of 
@@ -12,12 +16,13 @@ const About = () => {
             <br/> <br/>
 
             Our application seeks to streamline the process & puts the power of 
-            evaluation in the parent’s hands.  Then, the parent can search for a 
-            quality childcare provider that will assist in supporting their child’s
+            evaluation in the parent.s hands.  Then, the parent can search for a 
+            quality childcare provider that will assist in supporting their child.s
             needs and beginning the process of providing a possible diagnosis. 
 
         </p>
+    </div>
+       
     )
-}
 
-export default About
+}
