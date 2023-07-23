@@ -5,6 +5,7 @@ import data from "../data/36Month.json";
 export default function Form() {
   const [currentSection, setCurrentSection] = useState(1);
   const [formData, setFormData] = useState({});
+  const [scores, setScores] = useState();
 
   return (
     <>
@@ -18,6 +19,7 @@ export default function Form() {
                   setCurrentSection={setCurrentSection}
                   section={section}
                   setFormData={setFormData}
+                  setScores={setScores}
                 />
               )}
             </>
@@ -31,6 +33,7 @@ export default function Form() {
                   setCurrentSection={setCurrentSection}
                   section={section}
                   setFormData={setFormData}
+                  setScores={setScores}
                 />
               )}
             </>
@@ -41,7 +44,12 @@ export default function Form() {
   );
 }
 
-const SectionTemp = ({ setCurrentSection, section, setFormData }) => {
+const SectionTemp = ({
+  setCurrentSection,
+  section,
+  setFormData,
+  setScores,
+}) => {
   const { register, handleSubmit } = useForm({
     reValidateMode: "onBlur",
   });
@@ -62,7 +70,9 @@ const SectionTemp = ({ setCurrentSection, section, setFormData }) => {
           setCurrentSection((num) => num + 1);
           setFormData((obj) => ({
             ...obj,
+            ...data,
           }));
+          setScores((scores) => ({ ...scores, [section.title]: total }));
         })}
       >
         {section.questions.map((question, i) => {
@@ -137,7 +147,12 @@ const SectionTemp = ({ setCurrentSection, section, setFormData }) => {
   );
 };
 
-const OverallSectionTemp = ({ setCurrentSection, section, setFormData }) => {
+const OverallSectionTemp = ({
+  setCurrentSection,
+  section,
+  setFormData,
+  setScores,
+}) => {
   const { register, handleSubmit, watch } = useForm({
     reValidateMode: "onBlur",
   });
