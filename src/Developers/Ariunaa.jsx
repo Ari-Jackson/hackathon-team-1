@@ -1,7 +1,7 @@
 const Ariunaa = () => {
     return (
         <p>
-              Hi, I’m Ariunaa, a first-generation American originally from Ulan-Ude, Siberian
+                Hi, I’m Ariunaa, a first-generation American originally from Ulan-Ude, Siberian
                 region in Russia, I take great pride in my Buryat-Mongolian heritage. My
                 interest in software engineering started with graphic design and 3D modeling
                 applications for jewelry, which eventually led me down the path of becoming a

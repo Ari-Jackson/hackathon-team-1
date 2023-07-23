@@ -1,9 +1,9 @@
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 //Components
 import Home from "./Components/Home";
-import NavBar from "./Components/NavBar";
-
+import NavBar from "./components/NavBar";
 
 //Pages
 // import CalculateChildAge from './Components/CalculateChildAge';
@@ -12,12 +12,26 @@ import NavBar from "./Components/NavBar";
 // import FourOFour from './Components/Four0Four';
 
 //Commons
-import About from "./Components/About";
-import Resources from "./Components/Resources";
-import SignIn from "./Components/SignIn";
+import About from "./components/About";
+import SignIn from "./components/SignIn";
+import Resources from "./components/Resources";
+
 import Footer from "./Commons/Footer";
 import CalculateChildAge from "./Components/CalculateChildAge";
 
+
+
+//import { useState } from "react";
+
+//Pages
+
+// import MeetTheDevelopers from "./Developers/MeetTheDevelopers";
+
+// import FourOFour from "./Components/Four0Four";
+
+// //Commons
+
+// import Header from "./Commons/Header";
 
 
 export default function App() {
@@ -31,7 +45,6 @@ export default function App() {
           <Route path="/resources" element={<Resources/>}/>
           <Route path="/sign-in" element={<SignIn/>}/> 
           <Route path="/child-age" element={<CalculateChildAge/>}/> 
-
         </Routes>
         <Footer/>
       </BrowserRouter>
@@ -39,9 +52,3 @@ export default function App() {
   );
 }
 
-{
-  /* <Route path='/' element={<Home/>} />
-          <Route path='/child-age' element={<CalculateChildAge />} />
-          <Route path='/meet-the-developers' element={<MeetTheDevelopers />} />
-          <Route path='/*' element={<FourOFour />} /> */
-}
