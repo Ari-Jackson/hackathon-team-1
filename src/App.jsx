@@ -2,12 +2,41 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+//Pages
+import CalculateChildAge from './Components/CalculateChildAge';
+import MeetTheDevelopers from './Developers/MeetTheDevelopers';
+import Home from './Components/Home';
+import FourOFour from './Components/Four0Four';
+
+//Commons
+
+import Header from './Commons/Header';
+import Footer from './Commons/Footer';
+
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <BrowserRouter>
+        
+        <Header/>
+
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/child-age' element={<CalculateChildAge />} />
+          <Route path='/meet-the-developers' element={<MeetTheDevelopers />} />
+          <Route path='/*' element={<FourOFour />} />
+        </Routes>
+
+        <Footer/>
+      </BrowserRouter>
+
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
