@@ -44,7 +44,10 @@ export default function Home() {
         yet effective self-evaluation tool for tracking their child‘s
         developmental milestones. As every child&apos;s journey is unique,
         (application name) serves as a preliminary assessment to help parents
-        gain valuable insights into their little one&apos;s growth. Understanding
+        gain valuable insights into their little one&apos;s growth. 
+        <br></br>
+        <br></br>
+        Understanding
         that this self-evaluation is not a substitute for professional
         assessments, the app will provide curated resources and guidance to
         connect parents with trusted experts, ensuring a comprehensive
