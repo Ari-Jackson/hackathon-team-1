@@ -1,8 +1,9 @@
 
 export default function Logo() {
   return (
-    <h1 className="text-3xl font-extrabold tracking-tight text-white hover:translate-y-[-4px] transition-transform p-4 flex">
-          Tiny Tot Tracker
-    </h1>
+    <img
+    className=" mt-4 hover:translate-y-[-4px] transition-transform"
+     src="src/assets/logo.png" alt="logo" 
+     width={70}/>
   )
 }

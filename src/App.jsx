@@ -22,6 +22,7 @@ import CalculateChildAge from "./Components/CalculateChildAge";
 
 
 
+
 //import { useState } from "react";
 
 //Pages
@@ -37,7 +38,8 @@ import MeetTheDevelopers from "./Developers/MeetTheDevelopers";
 
 export default function App() {
   return (
-    <div className="bg-gradient-to-r from-[#c4ff6c] to-[#2ae200] my-0  h-[100%]">
+    <div className="bg-gradient-to-r from-[#ccfff0]  to-[#c2fcff] my-0  h-[100%]">
+
       <BrowserRouter>
         {/* <Header/> */}
       <NavBar/>
@@ -46,9 +48,14 @@ export default function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/resources" element={<Resources/>}/>
           <Route path="/sign-in" element={<SignIn/>}/> 
+<<<<<<< HEAD
           <Route path="/child-age" element={<CalculateChildAge />} /> 
           <Route path='/meet-the-developers' element={<MeetTheDevelopers/>} />
           <Route path="/*" element={<FourOFour/>} />
+=======
+          <Route path="/child-age" element={<CalculateChildAge/>}/> 
+          {/* <Route path="/form"  element={Form}/> */}
+>>>>>>> main
         </Routes>
         <Footer/>
       </BrowserRouter>
