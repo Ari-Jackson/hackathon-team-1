@@ -48,14 +48,9 @@ export default function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/resources" element={<Resources/>}/>
           <Route path="/sign-in" element={<SignIn/>}/> 
-<<<<<<< HEAD
           <Route path="/child-age" element={<CalculateChildAge />} /> 
           <Route path='/meet-the-developers' element={<MeetTheDevelopers/>} />
           <Route path="/*" element={<FourOFour/>} />
-=======
-          <Route path="/child-age" element={<CalculateChildAge/>}/> 
-          {/* <Route path="/form"  element={Form}/> */}
->>>>>>> main
         </Routes>
         <Footer/>
       </BrowserRouter>

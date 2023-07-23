@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import DisplayParents from "./DisplayParents";
 
 export default function SignIn() {
   const navigate = useNavigate();
@@ -117,7 +118,8 @@ export default function SignIn() {
         </div>
       </div>
       <div className="w-[80%]">
-        <img src="src/assets/parent3.png" alt="parent" />
+        {/* <img src="src/assets/parent3.png" alt="parent" /> */}
+        <DisplayParents/>
       </div>
     </div>
   );
