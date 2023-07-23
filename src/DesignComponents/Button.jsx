@@ -18,7 +18,7 @@
 // const Button = ({ children, style, onClick }) => {
 //   return (
 //     <div>
-//       <button style={buttonStyles} onClick={onClick}>
+//       <button className="" onClick={onClick}>
 //         {children}
 //       </button>
 //     </div>
