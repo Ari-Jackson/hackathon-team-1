@@ -29,7 +29,7 @@ const CalculateChildAge = () => {
 
     return (
         <div className="h-screen">
-            <h2>Please Select Your Child Age</h2>
+            <h2 className="text-3xl">Please Select Your Child Age</h2>
             <input
                 type='date'
                 value={birthday}

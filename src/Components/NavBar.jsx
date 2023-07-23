@@ -16,11 +16,11 @@ export default function NavBar() {
           <li className="hover:text-yellow-100 mx-auto hover:translate-y-[-4px] transition-transform">
             <Link to="/resources">Resources</Link>
           </li>
-          {/* <li className="hover:text-indigo-500">
-            <a href="/contact">Contact</a>
-          </li> */}
+          <li className="hover:text-yellow-100 mx-auto hover:translate-y-[-4px] transition-transform">
+            <Link to="/developers">Developers</Link>
+          </li>
         </ul>
-        {/* mobile button  */}
+       
       </div>
     </nav>
   );
