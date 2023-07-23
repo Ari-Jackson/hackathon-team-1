@@ -1,7 +1,18 @@
 const Taylor = () => {
     return (
         <p>
-            This is Taylor's story
+            Taylor : Prior to having an interest in code, I worked in early education
+            for over 10 years. My passion lies in exploring how technology can bridge
+            economic gaps and enhance the accessibility of quality education.
+
+            I did not have any coding experience before I joined Pursuit, however
+            this opportunity has challenged me & introduced me to an entirely new
+            set of skills and interests. I hope to build more projects both
+            independently & collaboratively.
+
+            In my free time I enjoy spending time outdoors with my daughter while
+            exploring hobbies such as hiking, kayaking and gardening. I also love
+            crafts & I am currently working on floral needlepoint pillow.
             <br /> <br />
             <a href="https://github.com/taylorbrooks007" target="_blank">
                 GitHub Link
