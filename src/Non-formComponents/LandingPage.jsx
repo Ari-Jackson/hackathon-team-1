@@ -1,6 +1,6 @@
 import Button from "../design-components/Button";
 import NavBar from "../design-components/NavBar";
-import Description from "../design-components/Description";
+//import Description from "../design-components/Description";
 
 
 
