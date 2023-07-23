@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'Cooper'; /* Replace 'YourFontName' with the desired font family name */
+    src: url('../assets/fonts/Cooper Black Regular.ttf') format('truetype'); /* Adjust the font file path and format as needed */
+    /* Add more src lines for other font weights or styles if needed */
+    font-weight: normal;
+    font-style: normal;
+  }
