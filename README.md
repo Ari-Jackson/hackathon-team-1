@@ -1,8 +1,19 @@
-# React + Vite
+# Welcome to a Tiny Tots Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Project Description
+Describe the project -  the inspiriation, limitations, scope, contibutors, etc
 
-Currently, two official plugins are available:
+##  Technologies Used
+Tiny Tots Tracker leverages the following technologies and frameworks:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React.js
+- React Router
+- Tailwind CSS
+- React Hook Forms
+- React Icons
+- Vite
+
+## Installing this repo
+ - [ ] `git clone` this repo
+ - [ ] cd into the file and `npm install`
+ - [ ] run `npm run dev` to start a development server
