@@ -13,16 +13,8 @@ import NavBar from "./Components/NavBar";
 
 
 //Commons
-<<<<<<< HEAD
-import About from "./Components/About";
 import SignIn from "./Components/SignIn";
 import Resources from "./Components/Resources";
-=======
-// import About from "./components/About";
-
-import SignIn from "./components/SignIn";
-import Resources from "./components/Resources";
->>>>>>> main
 
 
 import Footer from "./Commons/Footer";
