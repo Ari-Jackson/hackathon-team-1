@@ -20,7 +20,6 @@ export default function NavBar() {
             <Link to="/developers">Developers</Link>
           </li>
         </ul>
-       
       </div>
     </nav>
   );
