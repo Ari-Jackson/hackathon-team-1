@@ -222,9 +222,11 @@ const DisplayResultsCards30 = () => {
 
     
     const renderedCards = cardsToDisplay.map((card) => (
-      <div key={card.card}>
-        <h2>Card {card.card}</h2>
-        <p>{card.description}</p>
+      <div className="bg-white hover:bg-yellow-100 rounded-lg shadow-md" key={card.card}>
+        <div >
+          <h2 className="pl-3 bold text-[#0065ff]">{card.card}</h2>
+          <p className="p-12 hover:text-lg">{card.description}</p>
+        </div>
       </div>
     ));
 
@@ -243,16 +245,30 @@ const DisplayResultsCards30 = () => {
     
   return (
     <div>
-      <h1>Results Cards</h1>
-      {displayResults()}
-      <button onClick={handlePreviousClick} disabled={!nextClicked || currentIndex === 0}>
-        Previous
+        <p className="text-center py-12 text-4xl font-extrabold tracking-tight text-[#0065ff]">
+        These activities are designed to provide families with fun ways to foster growth<br/> and support their child in various domains of development.
+        <br/>🎨 🧸 📖
+        </p>
+      <div className="grid grid-cols-4 gap-3 mx-12 ">{displayResults()}</div>
+      <div className="mx-24 mt-[10%] grid grid-cols-2 gap-[80%]">
+      <button
+       className="inline-block rounded border-2 border-[#0065ff] px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-purple-600 hover:text-purple-600 hover:bg-opacity-10 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 text-[#0065ff]"
+        onClick={handlePreviousClick}
+        disabled={!nextClicked || currentIndex === 0}
+      >
+       &lt;&lt; Previous
       </button>
-      <button onClick={handleNextClick} disabled={currentIndex + 4 >= resultsArray30.length}>
-        Next
+      <button
+      className="justify-end inline-block rounded border-2 border-[#0065ff] px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-purple-600 hover:text-purple-600 hover:bg-opacity-10 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 text-[#0065ff]"
+        onClick={handleNextClick}
+        disabled={currentIndex + 4 >= resultsArray30.length}
+      >
+        Next &gt;&gt;
       </button>
+      </div>
+      
     </div>
-  )
+  );
 }
 
 export default DisplayResultsCards30 

@@ -5,14 +5,16 @@ export default function SignIn() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/child-age");
+    // navigate("/child-age");
+    navigate("/disclaimer");
+
   };
   return (
     <div className="grid grid-cols-2 gap-1 mt-12">
       <div className=" items-center justify-center px-6 py-8 md:h-screen lg:py-0 w-[50%] mx-auto">
         <div className=" shadow  md:mt-0 sm:max-w-md xl:p-0">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8 bg-white rounded-lg">
-            <h1 className="text-xl font-bold leading-tight tracking-tight  md:text-2xl text-center text-[#053560]">
+            <h1 className="text-3xl font-bold leading-tight tracking-tight text-center text-[#0065ff]">
               Create an account
             </h1>
             <form className="space-y-4 md:space-y-6" action="#">

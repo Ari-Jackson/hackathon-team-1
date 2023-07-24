@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import { FaPerson, FaPersonWalking, FaPersonRunning } from "react-icons/fa6";
 import Map from "./Map";
 import LinkToPDFButton from "./LinkToPDFButton";
+import { Link } from "react-router-dom";
 
 export default function Form() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -232,8 +233,8 @@ const OverallSectionTemp = ({
         <div></div>
         <input
           type="submit"
-          className="-ml-7 hover:cursor-pointer w-full py-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto"
-        ></input>
+          className="rounded-md bg-blue-500 -ml-7 p-3 border text-white hover:cursor-pointer"
+        />
       </form>
     </>
   );
@@ -282,13 +283,14 @@ const Result = ({ scores, formData, scoreCard }) => {
   return (
     <>
       <main className=" w-full min-h-screen">
-        <h1 className="text-3xl text-cente my-5 mx-10">Results</h1>
+        <h1 className=" my-[5%] text-center text-4xl font-extrabold tracking-tight text-[#0065ff]">
+          Results
+        </h1>
 
         <div className="flex space-x-10 mx-10">{result}</div>
         <div className="w-fit block mt-40 my-10 ml-40 rounded-md">
           <h2 className="text-xl mb-2"> NYC Pre-K Providers </h2>
           <Map />
-          <LinkToPDFButton />
         </div>
       </main>
     </>
