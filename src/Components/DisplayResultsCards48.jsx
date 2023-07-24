@@ -111,8 +111,7 @@ const DisplayResultsCards48 = () => {
         {
             card: 10,
             description: `Encourage your child to learn
-            her full name, address, and tele.
-            phone number. Make it into a
+            her full name, address, and telephone number. Make it into a
             singing or rhyming game for
             fun. Ask your child to repeat it
             back to you when you are riding
@@ -126,10 +125,8 @@ const DisplayResultsCards48 = () => {
             colored paper for each). Your child
             can sort the circles by color or by
             size. You can also ask your child
-            about the different sizes. For ex-
-            ample, ask your child, "Which one is
-            smallest?" Try this game using but-
-            tons removed from an old shirt.`
+            about the different sizes. For example, ask your child, "Which one is
+            smallest?" Try this game using buttons removed from an old shirt.`
         },
         {
             card: 12, 
@@ -149,7 +146,7 @@ const DisplayResultsCards48 = () => {
             Cover a picture in a familiar
             book with a sheet of paper and
             uncover a little at a time until
-            your child has quessed the
+            your child has guessed the
             picture.`
         },
         {
@@ -157,11 +154,9 @@ const DisplayResultsCards48 = () => {
             description: `Let your child help you prepare
             a meal. She can spread peanut
             butter and illy, peel a banana,
-            cut with a butter knife, pour ce-
-            real, and add milk (using a small
+            cut with a butter knife, pour cereal, and add milk (using a small
             container). Never give her a task
-            involving the stove or oven with-
-            out careful supervision.`
+            involving the stove or oven without careful supervision.`
         },
 
         {
@@ -213,13 +208,13 @@ const DisplayResultsCards48 = () => {
             circle. Holding onto the straw pieces, dip
             the string in the bubble mixture. Pull it out
             and gently move forward or backward.
-            You should see lovelv, big bubbles.`
+            You should see lovely, big bubbles.`
         },
         {
             card: 19,
             description: `Make a bean bag to catch and
             throw. Fill the toe of an old sock
-            or pantvhose with 3/4 cup drv
+            or pantyhose with 3/4 cup drv
             beans. Sew the remaining side
             or tie off with a rubber band.
             Play "hot potato" or simply play
