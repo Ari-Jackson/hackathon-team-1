@@ -6,17 +6,53 @@ import AriunaaReading from '../Images/AriunaaReading.jpeg'
 import DiandreGym from '../Images/DiandreGym.jpeg'
 import MeetDevelopers from '../Images/MeetDevelopers.jpeg'
 import AriDogs from '../Images/AriDogs.jpeg'
-import TaylorGardening from '../Images/TaylorGardening.jpeg'
+import TaylorAndDaughter from '../Images/TaylorAndDaughter.jpeg'
+
 
 
 const MeetTheDevelopers = () => {
     return (
+
       <div>
         <div className="grid grid-cols-2">
           <h1 className="flex justify-center py-auto">Learn More About Us</h1>
           <div className="w-[90%] mt-20">
             <img src={MeetDevelopers} alt="The Developers" height="700px" />
           </div>
+
+        <div>
+            <img src={MeetDevelopers}
+                alt="The Developers"
+                height='700px'
+            />
+
+            <h1>Learn More About Us</h1>
+            
+            <Ari />
+
+            <img src={AriDogs}
+                alt="Ari and his dogs"
+                height='700px'
+            />
+
+            <Ariunaa />
+            <img src={AriunaaReading}
+                alt='Ariunaa Reading'
+                height='700px'
+            />
+            <Diandre />
+            <img src={DiandreGym}
+                alt='Diandre at the gym'
+                height='700px'
+            />
+            <Taylor />
+
+            <img src={TaylorAndDaughter}
+                alt='Taylor Gardening'
+                width='1140px'
+            />
+
+        </div>
         </div>
 
         <Ari />
@@ -29,7 +65,7 @@ const MeetTheDevelopers = () => {
         <img src={DiandreGym} alt="Diandre at the gym" height="700px" />
         <Taylor />
 
-        <img src={TaylorGardening} alt="Taylor Gardening" width="1140px" />
+        <img src={TaylorAndDaughter} alt="Taylor Gardening" width="1140px" />
       </div>
     );
 }
