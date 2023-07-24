@@ -4,6 +4,7 @@ import data from "../data/FormQuestions.json";
 import scoreCard from "../data/FormScores.json";
 import { useLocation } from "react-router-dom";
 import { FaPerson, FaPersonWalking, FaPersonRunning } from "react-icons/fa6";
+import Map from "./Map";
 
 export default function Form() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -70,8 +71,9 @@ const SectionTemp = ({
 
   return (
     <>
-      <h1 className="text-3xl text-cente mb-5 ">{section.title}</h1>
+      <h1 className="text-3xl text-center mb-5 ">{section.title}</h1>
       <form
+        className="grid grid-cols-3 gap-4 mx-auto ml-24"
         onSubmit={handleSubmit((data) => {
           const dataSection = data[section.title];
 
@@ -98,7 +100,7 @@ const SectionTemp = ({
               <section
                 key={id}
                 id={id}
-                className="border rounded-md w-60 space-x-2"
+                className=" bg-white border rounded-md w-60 space-x-2 p-10 min-w-[20rem]"
               >
                 <h2 className="mb-5">
                   {i + 1}. {question.question}
@@ -151,10 +153,11 @@ const SectionTemp = ({
             </>
           );
         })}
+        <div></div>
 
         <input
           type="submit"
-          className="rounded-md bg-blue-500 p-3 border text-white hover:cursor-pointer"
+          className="mb-10 mt-3 rounded-md -ml-24 bg-blue-500 p-3 border text-white hover:cursor-pointer"
         />
       </form>
     </>
@@ -179,6 +182,7 @@ const OverallSectionTemp = ({
           setCurrentSection((num) => num + 1);
           setFormData((obj) => ({ ...obj, ...data }));
         })}
+        className="grid grid-cols-5 gap-4 mx-auto ml-7"
       >
         {section.questions.map((question, i) => {
           let id = `Q${i + 1}`;
@@ -190,7 +194,7 @@ const OverallSectionTemp = ({
               <section
                 key={id}
                 id={id}
-                className="border rounded-md w-60 space-x-2"
+                className="border bg-white p-4 rounded-md w-60 space-x-2"
               >
                 <h2 className="mb-5">
                   {i + 1}. {question.question}
@@ -223,10 +227,12 @@ const OverallSectionTemp = ({
             </>
           );
         })}
+        <div></div>
+        <div></div>
 
         <input
           type="submit"
-          className="rounded-md bg-blue-500 p-3 border text-white hover:cursor-pointer"
+          className="rounded-md bg-blue-500 -ml-7 p-3 border text-white hover:cursor-pointer"
         />
       </form>
     </>
@@ -245,7 +251,7 @@ const Result = ({ scores, formData, scoreCard }) => {
 
     if (scores[key] > scoreCard[section][key]) {
       cutoff = "";
-      development = "You're child development appears to be on schedule";
+      development = "You're child's development appears to be on schedule";
       icon = <FaPersonRunning className="inline w-7 h-7" />;
     } else if (scores[key] > scoreCard[section][key] - 10) {
       cutoff = `The max score for recommending further assessment in this category is ${scoreCard[section][key]}. You're child's score is close to the cut-off. Provide learning activities and monitor`;
@@ -253,7 +259,7 @@ const Result = ({ scores, formData, scoreCard }) => {
       icon = <FaPersonWalking className="inline w-7 h-7" />;
     } else {
       cutoff =
-        "You're child scored below the max score for recommending further assessment. A medical proffesion or Pre-K would be able to offer professional assessment. A list of available NYC Pre-K providers is listed below";
+        "You're child scored below the cut-off score. A medical proffesion or Pre-K will be able to offer further professional assessment.";
       development = "Further assessment with a professions may be needed";
       icon = <FaPerson className="inline w-7 h-7" />;
     }
@@ -276,10 +282,14 @@ const Result = ({ scores, formData, scoreCard }) => {
 
   return (
     <>
-      <main className=" w-full h-screen">
+      <main className=" w-full min-h-screen">
         <h1 className="text-3xl text-cente my-5 mx-10">Results</h1>
 
         <div className="flex space-x-10 mx-10">{result}</div>
+        <div className="w-fit block mt-40 my-10 ml-40 rounded-md">
+          <h2 className="text-xl mb-2"> NYC Pre-K Providers </h2>
+          <Map />
+        </div>
       </main>
     </>
   );
