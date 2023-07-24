@@ -93,7 +93,7 @@ export default function SignIn() {
               </div>
               <button
                 type="submit"
-                className=" p-4 text-lg text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto"
+                className=" p-4 text-lg text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 ml-4"
               >
                 Create an account
               </button>
