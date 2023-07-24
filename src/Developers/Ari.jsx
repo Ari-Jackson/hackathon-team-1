@@ -1,7 +1,7 @@
 const Ari = () => {
     return (
         <p className="w-[80%] mx-auto mt-24 text-center ">
-            Hi! I'm Ari Jackson. I'm a fellow at Pursuit, with experience in web
+            Hi! I&apos;m Ari Jackson. I&apos;m a fellow at Pursuit, with experience in web
             development and a passion for leveraging technology to enhance
             efficiency. My journey in web development began with creating systems
             in Notion to boost my personal productivity. The autonomy was
@@ -12,8 +12,8 @@ const Ari = () => {
             skills and make a greater impact on others.
 
 
-            Beyond coding, I'm black queer trans man born and raised in Brooklyn.
-            I’m an avid learner, particularly when it comes to anything relating to
+            Beyond coding, I&apos;m black queer trans man born and raised in Brooklyn.
+            I&apos;m an avid learner, particularly when it comes to anything relating to
             nature and history. I cherish spending quality time with my family and
             have a special place in my heart for training my one-too-many dogs. 
             <br /> <br />

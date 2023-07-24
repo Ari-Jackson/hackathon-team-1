@@ -12,9 +12,9 @@ const Diandre = () => {
         Prior to joining Pursuit, I had a background in journalism and political
         science, so studying and learning new things is in my nature and has
         always been a passion of mine. Outside of Pursuit, I am a gym
-        enthusiast. I've had various health issues throughout my life and many
+        enthusiast. I&apos;ve had various health issues throughout my life and many
         things have been out of my control. So I decided to take control of my
-        health and fitness because it's something that I mostly have control of.
+        health and fitness because it&apos;s something that I mostly have control of.
         <br /> <br />
         I actually decided to join Pursuit and get into software engineering
         because of the various health issues and I was forced to switch careers.
@@ -23,7 +23,7 @@ const Diandre = () => {
         engineering.
         <br /> <br />
         I am also a huge sports fan. Basketball is my favorite sport, the lakers
-        are my favorite team, and Kobe Bryant (RIP) is my favorite player. I've
+        are my favorite team, and Kobe Bryant (RIP) is my favorite player. I&apos;ve
         tried to adopt his mentality and work ethic daily to be the best
         possible person I can be. Hopefully within the next year I will land a
         job as a software engineer.
@@ -38,7 +38,7 @@ const Diandre = () => {
           {" "}
           GitHub{" "}
         </a>{" "}
-        to see what I’ve been working on.
+        to see what I&apos;ve been working on.
         </p>
     )
 }
