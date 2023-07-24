@@ -1,7 +1,9 @@
-
+import DisplayResultsCards30 from "../DisplayResultsCards30"
 
 export default function RangeFirst() {
   return (
-    <div className="h-screen">Range30-36</div>
+    <div className="h-screen mt-[10%]">
+      <DisplayResultsCards30/>
+    </div>
   )
 }

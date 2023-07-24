@@ -232,7 +232,7 @@ const OverallSectionTemp = ({
 
         <input
           type="submit"
-          className="rounded-md bg-blue-500 -ml-7 p-3 border text-white hover:cursor-pointer"
+          className="rounded-md bg--500 -ml-7 p-3 border text-white hover:cursor-pointer"
         />
       </form>
     </>

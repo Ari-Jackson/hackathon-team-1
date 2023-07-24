@@ -22,8 +22,6 @@ export default function Resources() {
         For Children 48-60 months
         </Link></li>
       </ul>
-      <DisplayResultsCards30/>
-
     </div>
   )
 }
