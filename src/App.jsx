@@ -13,7 +13,8 @@ import NavBar from "./Components/NavBar";
 
 
 //Commons
-import About from "./components/About";
+// import About from "./components/About";
+
 import SignIn from "./components/SignIn";
 import Resources from "./components/Resources";
 
@@ -21,6 +22,8 @@ import Resources from "./components/Resources";
 import Footer from "./Commons/Footer";
 import CalculateChildAge from "./Components/CalculateChildAge";
 import MeetTheDevelopers from "./Developers/MeetTheDevelopers";
+import Form from "./Components/Form";
+import FourOFour from  "./Components/Four0Four"
 
 
 
@@ -48,9 +51,11 @@ export default function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/resources" element={<Resources/>}/>
           <Route path="/sign-in" element={<SignIn/>}/> 
+          <Route path="/child-age" element={<CalculateChildAge />} /> 
+          <Route path='/developers' element={<MeetTheDevelopers/>} />
+          <Route path="/*" element={<FourOFour/>} /> 
           <Route path="/child-age" element={<CalculateChildAge/>}/> 
-          <Route path="/developers" element={<MeetTheDevelopers/>}/> 
-          {/* <Route path="/form"  element={Form}/> */}
+          <Route path="/form"  element={Form}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

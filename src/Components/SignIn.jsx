@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import DisplayParents from "./DisplayParents";
 
 export default function SignIn() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ export default function SignIn() {
       <div className=" items-center justify-center px-6 py-8 md:h-screen lg:py-0 w-[50%] mx-auto">
         <div className=" shadow  md:mt-0 sm:max-w-md xl:p-0">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8 bg-white rounded-lg">
-            <h1 className="text-xl font-bold leading-tight tracking-tight  md:text-2xl  text-[#0065ff]">
+            <h1 className="text-xl font-bold leading-tight tracking-tight  md:text-2xl text-center text-[#053560]">
               Create an account
             </h1>
             <form className="space-y-4 md:space-y-6" action="#">
@@ -102,22 +103,23 @@ export default function SignIn() {
                 >
                   Login here
                 </a>
-              </p>    
+              </p>
             </form>
             <button
-                onClick={handleClick}
-                className="w-full py-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto"
-              >
-                Continue as a Guest
-              </button>
-              <p className="text-sm font-light text-gray-500 italic dark:text-gray-400 text-center">
-                You will not receive a pdf file upon completion of your form
-                </p>
+              onClick={handleClick}
+              className="w-full py-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto"
+            >
+              Continue as a Guest
+            </button>
+            <p className="text-sm font-light text-gray-500 italic dark:text-gray-400 text-center">
+              You will not receive a pdf file upon completion of your form
+            </p>
           </div>
         </div>
       </div>
       <div className="w-[80%]">
-        <img src="src/assets/parent3.png" alt="parent" />
+        {/* <img src="src/assets/parent3.png" alt="parent" /> */}
+        <DisplayParents />
       </div>
     </div>
   );
