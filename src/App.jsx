@@ -13,16 +13,25 @@ import NavBar from "./Components/NavBar";
 
 
 //Commons
+// import About from "./components/About";
+
 import SignIn from "./Components/SignIn";
 import Resources from "./Components/Resources";
+import Disclaimer from "./Components/Disclaimer";
 
 
 import Footer from "./Commons/Footer";
 import CalculateChildAge from "./Components/CalculateChildAge";
 import MeetTheDevelopers from "./Developers/MeetTheDevelopers";
 import Form from "./Components/Form";
+import Map from "./Components/Map";
 import FourOFour from  "./Components/Four0Four"
+import DisplayResultsCards30 from "./Components/DisplayResultsCards30";
 
+//Age Range Cards
+import RangeFirst from "./Components/AgeRangesCards/RangeFirst";
+import RangeSecond from "./Components/AgeRangesCards/RangeSecond";
+import RangeThird from "./Components/AgeRangesCards/RangeThird";
 
 
 //import { useState } from "react";
@@ -52,8 +61,17 @@ export default function App() {
           <Route path="/child-age" element={<CalculateChildAge />} /> 
           <Route path='/developers' element={<MeetTheDevelopers/>} />
           <Route path="/*" element={<FourOFour/>} /> 
+          <Route path="/disclaimer"  element={<Disclaimer/>}/>
           <Route path="/child-age" element={<CalculateChildAge/>}/> 
           <Route path="/form"  element={<Form/>}/>
+          <Route path="/map"  element={<Map/>}/>
+          <Route path="/children-30-36-months"  element={<RangeFirst/>}/>
+          <Route path="/children-36-38-months"  element={<RangeSecond/>}/>
+          <Route path="/children-48-60-months"  element={<RangeThird/>}/>
+
+          <Route path="/display-cards"  element={<DisplayResultsCards30/>}/>
+
+        
         </Routes>
         <Footer/>
       </BrowserRouter>
