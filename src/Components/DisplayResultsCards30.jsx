@@ -11,10 +11,8 @@ const DisplayResultsCards30 = () => {
             description: `Tell or read a familiar story and
             pause frequently to leave out a
             word, asking your child to "fill it
-            in." For example, Little Red Rid-
-            ing Hood said, "Grandmother,
-            what big
-            you have.`
+            in." For example, Little Red Riding Hood said, "Grandmother,
+            what big you have.`
 
         },
         {
@@ -43,8 +41,7 @@ const DisplayResultsCards30 = () => {
             description: `Put an old blanket over a table
             to make a tent or house. Pack a
             "picnic" sack for your camper.
-            Have your child take along a pil-
-            low on the "camp out" for a
+            Have your child take along a pillow on the "camp out" for a
             nap. Flashlights are especially
             fun.`
         },
@@ -53,23 +50,19 @@ const DisplayResultsCards30 = () => {
             description: `Get a piece of butcher paper large
             enough for your child to lie on.
             Draw around your child's body to
-            make an outline. Don't forget fin-
-            gers and toes. Talk about body parts
+            make an outline. Don't forget fingers and toes. Talk about body parts
             and print the words on the paper.
             Let your child color the poster. Hang
             the poster on a wall in your child's
-            room.
-            Have your`
+            room. Have your`
         }, 
         {
             card: 6, 
-            description: `Children at this age may be in-
-            terested in creating art in differ-
-            ent ways. Try cuttinq a potato in
+            description: `Children at this age may be interested in creating art in 
+            different ways. Try cuttinq a potato in
             half and carving a simple shape
             or design for your child to dip in
-            paint and then stamp onto
-            paper.`
+            paint and then stamp onto paper.`
         },
         {
             card: 7,
@@ -94,8 +87,7 @@ const DisplayResultsCards30 = () => {
         {
             card: 9,
             description:`Trace around simple objects
-            with your child. Use cups of dif-
-            ferent sizes, blocks, or your
+            with your child. Use cups of different sizes, blocks, or your
             child's and your hands. Using
             felt-tip markers or crayons of
             different colors makes it even
@@ -132,8 +124,7 @@ const DisplayResultsCards30 = () => {
         },
         {
             card: 13,
-            description: `Make our own puzzles by cut-
-            ting out magazine pictures of
+            description: `Make our own puzzles by cutting out magazine pictures of
             whole people. Have your child
             help glue pictures onto card-
             board. Cut pictures into three
@@ -181,8 +172,7 @@ const DisplayResultsCards30 = () => {
             how to use it to hit a balloon. See
             how long your child can keep the
             balloon in the air or how many times
-            he can hit it back to you. This activ-
-            ity helps develop large body and
+            he can hit it back to you. This activity helps develop large body and
             eye-hand coordination. Always care
             fully supervise when playing with
             balloons.`
@@ -200,8 +190,7 @@ const DisplayResultsCards30 = () => {
         {
             card: 19,
             description: `Encourage your child to try the
-            "elephant walk," bending for-
-            ward at the waist and letting
+            "elephant walk," bending forward at the waist and letting
             your arms (hands clasped together) swing freely while taking
             slow and heavy steps. This is
             great to do with music.`

@@ -1,6 +1,6 @@
 const Ariunaa = () => {
     return (
-        <p>
+        <p className="w-[80%] mx-auto mt-24 text-center">
                 Hi, I’m Ariunaa, a first-generation American originally from Ulan-Ude, Siberian
                 region in Russia, I take great pride in my Buryat-Mongolian heritage. My
                 interest in software engineering started with graphic design and 3D modeling

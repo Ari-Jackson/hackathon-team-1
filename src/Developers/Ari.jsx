@@ -1,6 +1,6 @@
 const Ari = () => {
     return (
-        <p>
+        <p className="w-[80%] mx-auto mt-24 text-center ">
             Hi! I'm Ari Jackson. I'm a fellow at Pursuit, with experience in web
             development and a passion for leveraging technology to enhance
             efficiency. My journey in web development began with creating systems

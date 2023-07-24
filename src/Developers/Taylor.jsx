@@ -1,6 +1,6 @@
 const Taylor = () => {
     return (
-        <p>
+        <p className="w-[80%] mx-auto mt-24 text-center">
             Taylor : Prior to having an interest in code, I worked in early education
             for over 10 years. My passion lies in exploring how technology can bridge
             economic gaps and enhance the accessibility of quality education.

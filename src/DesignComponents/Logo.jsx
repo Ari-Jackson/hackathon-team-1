@@ -4,6 +4,6 @@ export default function Logo() {
     <img
     className=" mt-2 hover:translate-y-[-4px] transition-transform"
      src="src/assets/logo.png" alt="logo" 
-     width={90}/>
+     width={50}/>
   )
 }
