@@ -19,7 +19,7 @@ export default function Disclaimer() {
           This application is not designed to make any formal diagnosis.
           <br /> Any diagnosis must be made by a medical professional.
         </p>
-        <p className="font-semibold">You would need pencil and papaer ✏️📓</p>
+        <p className="font-semibold">You would need pencil and paper ✏️📓</p>
       </div>
       <div className="flex justify-center mt-32 m-24 ">
         <button
