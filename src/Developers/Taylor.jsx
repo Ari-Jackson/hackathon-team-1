@@ -14,11 +14,11 @@ const Taylor = () => {
             exploring hobbies such as hiking, kayaking and gardening. I also love
             crafts & I am currently working on floral needlepoint pillow.
             <br /> <br />
-            <a href="https://github.com/taylorbrooks007" target="_blank">
+            <a href="https://github.com/taylorbrooks007" target="_blank" rel="noreferrer">
                 GitHub Link
             </a>
 
-            <a href="https://www.linkedin.com/in/taylorybrooks/" target="_blank">
+            <a href="https://www.linkedin.com/in/taylorybrooks/" target="_blank" rel="noreferrer">
                 LinkedIn
             </a>
             
