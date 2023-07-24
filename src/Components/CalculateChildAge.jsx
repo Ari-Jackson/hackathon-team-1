@@ -45,7 +45,7 @@ const CalculateChildAge = () => {
   const navigate = useNavigate();
   return (
     <div className="h-screen">
-      <div className=" mx-auto mt-[10%] rounded-lg shadow-md bg-white w-[30%] h-[60%] flex grid  p-12 ">
+      <div className="mx-auto mt-[10%] rounded-lg shadow-md bg-white w-[30%] h-[60%] flex grid  p-12 ">
         <p className="text-3xl font-extrabold tracking-tight text-[#053560] mt-3">
           Please
           <br />

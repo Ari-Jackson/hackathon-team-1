@@ -5,7 +5,9 @@ export default function SignIn() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/child-age");
+    // navigate("/child-age");
+    navigate("/disclaimer");
+
   };
   return (
     <div className="grid grid-cols-2 gap-1 mt-12">

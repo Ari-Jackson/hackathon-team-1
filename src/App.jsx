@@ -15,14 +15,16 @@ import NavBar from "./Components/NavBar";
 //Commons
 // import About from "./components/About";
 
-import SignIn from "./components/SignIn";
-import Resources from "./components/Resources";
+import SignIn from "./Components/SignIn";
+import Resources from "./Components/Resources";
+import Disclaimer from "./Components/Disclaimer";
 
 
 import Footer from "./Commons/Footer";
 import CalculateChildAge from "./Components/CalculateChildAge";
 import MeetTheDevelopers from "./Developers/MeetTheDevelopers";
 import Form from "./Components/Form";
+import Map from "./Components/Map";
 import FourOFour from  "./Components/Four0Four"
 
 
@@ -54,8 +56,11 @@ export default function App() {
           <Route path="/child-age" element={<CalculateChildAge />} /> 
           <Route path='/developers' element={<MeetTheDevelopers/>} />
           <Route path="/*" element={<FourOFour/>} /> 
+          <Route path="/disclaimer"  element={<Disclaimer/>}/>
           <Route path="/child-age" element={<CalculateChildAge/>}/> 
           <Route path="/form"  element={<Form/>}/>
+          <Route path="/map"  element={<Map/>}/>
+        
         </Routes>
         <Footer/>
       </BrowserRouter>
