@@ -4,34 +4,34 @@
     "Gross Motor": 36.99,
     "Fine Motor": 18.07,
     "Problem Solving": 30.29,
-    "Personal Social": 35.33
+    "Personal-Social": 35.33
   },
   "42": {
     "Communication": 27.06,
     "Gross Motor": 36.27,
     "Fine Motor": 19.82,
     "Problem Solving": 28.11,
-    "Personal Social": 31.12
+    "Personal-Social": 31.12
   },
   "48": {
     "Communication": 30.72,
     "Gross Motor": 32.78,
     "Fine Motor": 15.81,
     "Problem Solving": 31.3,
-    "Personal Social": 26.6
+    "Personal-Social": 26.6
   },
   "54": {
     "Communication": 31.85,
     "Gross Motor": 35.18,
     "Fine Motor": 17.32,
     "Problem Solving": 28.12,
-    "Personal Social": 32.33
+    "Personal-Social": 32.33
   },
   "60": {
     "Communication": 33.19,
     "Gross Motor": 31.28,
     "Fine Motor": 26.54,
     "Problem Solving": 29.99,
-    "Personal Social": 39.07
+    "Personal-Social": 39.07
   }
 }
