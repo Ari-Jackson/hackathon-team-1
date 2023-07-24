@@ -29,7 +29,7 @@ const Ariunaa = () => {
                 it’s our responsibility to take action and do our part in creating a more
                 sustainable and equitable future. 
                 <br /> <br />
-                Check out my <a href="https://www.linkedin.com/in/ariunaa-myagmar/" target="_blank"> LinkedIn </a> and <a href='https://github.com/ariunaamy' target="_blank"> GitHub </a> to see what I’ve been working on.
+                Check out my <a className="text-[#0065ff] font-bold" href="https://www.linkedin.com/in/ariunaa-myagmar/" target="_blank" rel="noreferrer"> LinkedIn </a> and <a className="text-[#0065ff] font-bold" href='https://github.com/ariunaamy' target="_blank" rel="noreferrer"> GitHub </a> to see what I’ve been working on.
         </p>
     )
 }
