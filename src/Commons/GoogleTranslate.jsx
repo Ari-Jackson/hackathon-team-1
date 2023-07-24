@@ -32,7 +32,7 @@ const GoogleTranslate = () => {
           headers: {
             'content-type': 'application/x-www-form-urlencoded',
             'Accept-Encoding': 'application/gzip',
-            'X-RapidAPI-Key': import.meta.REACT_APP_GOOGLE_TRANSLATE, // Use process.env.REACT_APP_GOOGLE_TRANSLATE here
+            'X-RapidAPI-Key': import.meta.REACT_APP_GOOGLE_TRANSLATE, 
             'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
           },
           data: encodedParams,

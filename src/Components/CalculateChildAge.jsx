@@ -6,15 +6,18 @@ const CalculateChildAge = () => {
   const [age, setAge] = useState("");
 
   const calculateAge = () => {
+    if (!birthday) {
+      alert("Please Enter Valid Age");
+      return;
+    }
+
     const todaysDate = new Date();
     const dateOfBirth = new Date(birthday);
 
     const ageInMilliseconds = todaysDate - dateOfBirth;
 
     const monthsMilliseconds = 1000 * 60 * 60 * 24 * 30.4375;
-    const convertAgeToMonths = Math.floor(
-      ageInMilliseconds / monthsMilliseconds,
-    );
+    const convertAgeToMonths = Math.floor(ageInMilliseconds / monthsMilliseconds);
 
     if (convertAgeToMonths < 36 || convertAgeToMonths >= 60) {
       setAge(
@@ -62,7 +65,7 @@ const CalculateChildAge = () => {
 
         <button
           onClick={calculateAge}
-          className="  mx-auto w-[25%] h-[60%] relative rounded px-1 py-1 overflow-hidden group bg-green-500 hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
+          className="mx-auto w-[25%] h-[60%] relative rounded px-1 py-1 overflow-hidden group bg-green-500 hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
         >
           <span className="absolute transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
           <span className="relative">Submit</span>
@@ -79,7 +82,7 @@ const CalculateChildAge = () => {
         <button
           onClick={handleClick}
           type="button"
-          className="ml-inline-block rounded border-2 border-[#0065ff] px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-purple-600 hover:text-purple-600 hover:bg-opacity-10 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 text-[#0065ff]"
+          className="inline-block rounded border-2 border-[#0065ff] px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-purple-600 hover:text-purple-600 hover:bg-opacity-10 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 text-[#0065ff]"
           data-te-ripple-init
         >
           Continue &gt;&gt;
