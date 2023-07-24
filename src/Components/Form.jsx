@@ -249,17 +249,16 @@ const Result = ({ scores, formData, scoreCard }) => {
       development,
       cutoff = "";
 
-    if (scores[key] > scoreCard[section][key]) {
-      cutoff = "";
-      development = "You're child's development appears to be on schedule";
+    if (scores[key] > scoreCard[section][key] + 10) {
+      cutoff = `You're child scored above the cut-off score of ${scoreCard[section][key]}.`;
+      development = `You're child's development appears to be on schedule`;
       icon = <FaPersonRunning className="inline w-7 h-7" />;
-    } else if (scores[key] > scoreCard[section][key] - 10) {
-      cutoff = `The max score for recommending further assessment in this category is ${scoreCard[section][key]}. You're child's score is close to the cut-off. Provide learning activities and monitor`;
+    } else if (scores[key] > scoreCard[section][key]) {
+      cutoff = `The cut-off for recommending further assessment in this category is ${scoreCard[section][key]}. You're child's score is above but close to the cut-off. Provide learning activities and monitor`;
       development = "Provide learning activities and monitor";
       icon = <FaPersonWalking className="inline w-7 h-7" />;
     } else {
-      cutoff =
-        "You're child scored below the cut-off score. A medical proffesion or Pre-K will be able to offer further professional assessment.";
+      cutoff = `You're child scored below the cut-off score of ${scoreCard[section][key]}. A medical office or Pre-K will be able to offer further professional assessment.`;
       development = "Further assessment with a professions may be needed";
       icon = <FaPerson className="inline w-7 h-7" />;
     }
