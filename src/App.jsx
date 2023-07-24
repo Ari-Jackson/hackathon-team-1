@@ -55,7 +55,7 @@ export default function App() {
           <Route path='/developers' element={<MeetTheDevelopers/>} />
           <Route path="/*" element={<FourOFour/>} /> 
           <Route path="/child-age" element={<CalculateChildAge/>}/> 
-          <Route path="/form"  element={Form}/>
+          <Route path="/form"  element={<Form/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
