@@ -4,7 +4,6 @@ import data from "../data/FormQuestions.json";
 import scoreCard from "../data/FormScores.json";
 import { useLocation } from "react-router-dom";
 import { FaPerson, FaPersonWalking, FaPersonRunning } from "react-icons/fa6";
-import Map from "./Map";
 import { Link } from "react-router-dom";
 
 export default function Form() {
