@@ -4,6 +4,8 @@ import data from "../data/FormQuestions.json";
 import scoreCard from "../data/FormScores.json";
 import { useLocation } from "react-router-dom";
 import { FaPerson, FaPersonWalking, FaPersonRunning } from "react-icons/fa6";
+import Map from "./Map";
+import LinkToPDFButton from "./LinkToPDFButton";
 import { Link } from "react-router-dom";
 
 export default function Form() {
@@ -71,7 +73,7 @@ const SectionTemp = ({
 
   return (
     <>
-      <h1 className="text-3xl text-center mb-5 ">{section.title}</h1>
+      <h1 className="text-center py-12 text-4xl font-extrabold tracking-tight text-[#0065ff]">{section.title}</h1>
       <form
         className="grid grid-cols-3 gap-4 mx-auto ml-24"
         onSubmit={handleSubmit((data) => {
@@ -157,7 +159,7 @@ const SectionTemp = ({
 
         <input
           type="submit"
-          className="mb-10 mt-3 rounded-md -ml-24 bg-blue-500 p-3 border text-white hover:cursor-pointer"
+          className="-ml-24 my-10 hover:cursor-pointer w-full py-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto"
         />
       </form>
     </>
@@ -229,11 +231,10 @@ const OverallSectionTemp = ({
         })}
         <div></div>
         <div></div>
-
         <input
           type="submit"
-          className="rounded-md bg--500 -ml-7 p-3 border text-white hover:cursor-pointer"
-        />
+          className="-ml-7 hover:cursor-pointer w-full py-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto"
+        ></input>
       </form>
     </>
   );
@@ -282,35 +283,37 @@ const Result = ({ scores, formData, scoreCard }) => {
   return (
     <>
       <main className=" w-full min-h-screen">
-        <h1 className=" my-[5%] text-center text-4xl font-extrabold tracking-tight text-[#0065ff]">Results</h1>
+        <h1 className=" my-[5%] text-center text-4xl font-extrabold tracking-tight text-[#0065ff]">
+          Results
+        </h1>
 
         <div className="flex space-x-10 mx-10">{result}</div>
-        <p className="text-center w-full py-[10%] text-3xl font-extrabold tracking-tight text-[#0065ff]">
-        These activities are designed to provide families with fun ways to foster growth<br/> and support their child in various domains of development.
-        </p>
-        <div className="w-[50%] ml-40 rounded-md">
-          <ul className="mx-[30%] ">
-          <li className=" py-4 my-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
-        <Link to="/map">
-        Map of Pre-K providers
-        </Link></li>
-       <li className=" py-4 my-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
-        <Link to="/map">
-        Map of Pre-K providers
-        </Link></li>
-        <li className=" py-4 my-4  text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
-        <Link to="/children-30-36-months">
-        For Children 30-36 months
-        </Link></li>
-        <li className=" py-4 my-4  text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
-        <Link to="/children-36-38-months">
-        For Children 36-48 months
-        </Link></li>
-        <li className=" py-4 my-4  text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
-        <Link to="/children-48-60-months">
-        For Children 48-60 months
-        </Link></li>
-      </ul>
+        <div className="w-fit block mt-40 my-10 rounded-md">
+          <h2 className="text-xl mb-2 ml-20 w-fit"> NYC Pre-K Providers </h2>
+          <Map />
+          <p className="text-center mb-10 w-full mx-5 text-3xl font-extrabold tracking-tight text-[#0065ff]">
+            These activities are designed to provide families with fun ways to
+            foster growth
+            <br /> and support their child in various domains of development.
+          </p>
+          <div className="w-[50%] mx-auto rounded-m space-x-4 pl-30 text-center">
+            <LinkToPDFButton />
+            <button className=" py-4 my-4  text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
+              <Link to="/children-30-36-months">
+                Activities for 30-36 months
+              </Link>
+            </button>
+            <button className=" py-4 my-4  text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
+              <Link to="/children-36-48-months">
+                Activities for 36-48 months
+              </Link>
+            </button>
+            <button className=" py-4 my-4  text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
+              <Link to="/children-48-60-months">
+                Activities for 48-60 months
+              </Link>
+            </button>
+          </div>
         </div>
       </main>
     </>

@@ -8,10 +8,10 @@ export default function NavBar() {
       <Link to="/">
         <Logo />
       </Link>
-      <div className="flex justify-end font-h1 text-2xl flex justify-end items-center p-4 text-white">
+      <div className="flex justify-end font-h1 text-2xl items-center p-4 text-white">
         <ul className="gap-6 hidden sm:flex ">
           <li className="hover:text-yellow-100 mx-auto hover:translate-y-[-4px] transition-transform">
-            <a href="#about">About</a>
+            <a href="/#about">About</a>
           </li>
           <li className="hover:text-yellow-100 mx-auto hover:translate-y-[-4px] transition-transform">
             <Link to="/resources">Resources</Link>
