@@ -73,7 +73,7 @@ const SectionTemp = ({
 
   return (
     <>
-      <h1 className="text-3xl mt-10 text-center mb-5 ">{section.title}</h1>
+      <h1 className="text-center py-12 text-4xl font-extrabold tracking-tight text-[#0065ff]">{section.title}</h1>
       <form
         className="grid grid-cols-3 gap-4 mx-auto ml-24"
         onSubmit={handleSubmit((data) => {
