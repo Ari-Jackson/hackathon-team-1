@@ -40,7 +40,7 @@ const CalculateChildAge = () => {
         : "60";
     navigate({
       pathname: "/form",
-      ageGroup: `?age=${ageGroup}`,
+      search: `?age=${ageGroup}`,
     });
   };
 
