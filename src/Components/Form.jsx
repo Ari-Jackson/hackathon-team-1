@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import data from "../data/FormQuestions.json";
 import scoreCard from "../data/FormScores.json";
 import { useLocation } from "react-router-dom";
-import { FaPerson } from "react-icons/fa";
+// import { FaPerson } from "react-icons/fa";
 
 export default function Form() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -239,13 +239,12 @@ const Result = ({ scores, formData }) => {
         {key}: {scores[key]} / 60
       </h1>,
       <p>
-        {scores[key] > scoreCard[section][key] ? (
-          "You're child development appears to be on schedule"
-        ) : scores[key] > scoreCard[section][key] - 10 ? (
-          "Provide learning activities and monitor"
-        ) : (
-          <FaPerson />
-        )}
+        {scores[key] > scoreCard[section][key]
+          ? "You're child development appears to be on schedule"
+          : scores[key] > scoreCard[section][key] - 10
+          ? "Provide learning activities and monitor"
+          : // <FaPerson />
+            "CONSULTATION"}
       </p>,
       <p className="mb-5 pt-2">
         {scores[key] > scoreCard[section][key]
