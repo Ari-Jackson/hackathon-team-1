@@ -23,7 +23,6 @@ const Taylor = () => {
             </a>
             
             <br /> <br />
-            Get another other social media that is wanted
         </p>
     )
 }
