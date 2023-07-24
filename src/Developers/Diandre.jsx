@@ -1,6 +1,6 @@
 const Diandre = () => {
     return (
-        <p>
+        <p className="w-[80%] mx-auto mt-24 text-center">
             Hi my name is Diandre and I am 29 years. I am a first generation
         American from Brooklyn, NY. I am currently a student at Pursuit learning
         various programming languages and frameworks such as JavaScript, React,
@@ -29,12 +29,12 @@ const Diandre = () => {
         job as a software engineer.
         <br /> <br />
         Check out my{" "}
-        <a href="https://www.linkedin.com/in/diandre-miller/" target="_blank">
+        <a href="https://www.linkedin.com/in/diandre-miller/" target="_blank" rel="noreferrer">
           {" "}
           LinkedIn
         </a>{" "}
         and{" "}
-        <a href="https://github.com/DiandreMiller" target="_blank">
+        <a href="https://github.com/DiandreMiller" target="_blank" rel="noreferrer">
           {" "}
           GitHub{" "}
         </a>{" "}
