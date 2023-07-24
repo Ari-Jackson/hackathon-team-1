@@ -3,23 +3,33 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 //Components
 import Home from "./Components/Home";
-import NavBar from "./components/NavBar";
+import NavBar from "./Components/NavBar";
 // import Header from "./Commons/Header";
 
 //Pages
 // import CalculateChildAge from './Components/CalculateChildAge';
 // import MeetTheDevelopers from './Developers/MeetTheDevelopers';
 // import Home from './Components/Home';
-import FourOFour from './Components/Four0Four';
+
 
 //Commons
+<<<<<<< HEAD
 import About from "./Components/About";
 import SignIn from "./Components/SignIn";
 import Resources from "./Components/Resources";
+=======
+// import About from "./components/About";
+
+import SignIn from "./components/SignIn";
+import Resources from "./components/Resources";
+>>>>>>> main
+
 
 import Footer from "./Commons/Footer";
 import CalculateChildAge from "./Components/CalculateChildAge";
-
+import MeetTheDevelopers from "./Developers/MeetTheDevelopers";
+import Form from "./Components/Form";
+import FourOFour from  "./Components/Four0Four"
 
 
 
@@ -27,7 +37,7 @@ import CalculateChildAge from "./Components/CalculateChildAge";
 
 //Pages
 
-import MeetTheDevelopers from "./Developers/MeetTheDevelopers";
+
 
 // import FourOFour from "./Components/Four0Four";
 
@@ -45,12 +55,13 @@ export default function App() {
       <NavBar/>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
           <Route path="/resources" element={<Resources/>}/>
           <Route path="/sign-in" element={<SignIn/>}/> 
           <Route path="/child-age" element={<CalculateChildAge />} /> 
-          <Route path='/meet-the-developers' element={<MeetTheDevelopers/>} />
-          <Route path="/*" element={<FourOFour/>} />
+          <Route path='/developers' element={<MeetTheDevelopers/>} />
+          <Route path="/*" element={<FourOFour/>} /> 
+          <Route path="/child-age" element={<CalculateChildAge/>}/> 
+          <Route path="/form"  element={<Form/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

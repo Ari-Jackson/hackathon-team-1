@@ -33,7 +33,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <h2 className="text-center my-12 text-black italic text-2xl">
+      <h2 className="text-center my-24 text-[#053560] italic text-2xl">
         Simple Assessment - Life Changing Results{" "}
       </h2>
       <div 
