@@ -21,10 +21,7 @@ const MeetTheDevelopers = () => {
           </div>
 
         <div>
-            <img src={MeetDevelopers}
-                alt="The Developers"
-                height='700px'
-            />
+            
 
             <h1>Learn More About Us</h1>
             
