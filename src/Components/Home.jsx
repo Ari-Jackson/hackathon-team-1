@@ -21,7 +21,7 @@ export default function Home() {
             Tiny Tot Tracker
           </h1>
           <button
-           onClick={handleClick}
+            onClick={handleClick}
             className=" ml-6 relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2  rounded-full shadow-md group hover:shadow-xl"
           >
             <span className="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-red-500 rounded-full blur-md ease"></span>
@@ -36,24 +36,24 @@ export default function Home() {
       <h2 className="text-center my-24 text-[#053560] italic text-2xl">
         Simple Assessment - Life Changing Results{" "}
       </h2>
-      <div 
-      id="about"
-      className="mt-12 text-center mx-64 p-[2%] bg-white text-[#002f70] opacity-80 rounded-lg">
+      <div
+        id="about"
+        className="mt-12 text-center mx-64 p-[2%] bg-white text-[#002f70] opacity-80 rounded-lg"
+      >
         <p>
-        Our innovative app is designed to empower parents by offering a simple
-        yet effective self-evaluation tool for tracking their child‘s
-        developmental milestones. As every child&apos;s journey is unique,
-        (application name) serves as a preliminary assessment to help parents
-        gain valuable insights into their little one&apos;s growth. 
-        <br></br>
-        <br></br>
-        Understanding
-        that this self-evaluation is not a substitute for professional
-        assessments, the app will provide curated resources and guidance to
-        connect parents with trusted experts, ensuring a comprehensive
-        confirmation process. Embrace the joy of parenthood with confidence,
-        supported by (application name)’s reliable assistance every step of the
-        way.
+          Our innovative app is designed to empower parents by offering a simple
+          yet effective self-evaluation tool for tracking their child‘s
+          developmental milestones. As every child&apos;s journey is unique,
+          Tiny Tot Tracker serves as a preliminary assessment to help parents
+          gain valuable insights into their little one&apos;s growth.
+          <br></br>
+          <br></br>
+          Understanding that this self-evaluation is not a substitute for
+          professional assessments, the app will provide curated resources and
+          guidance to connect parents with trusted experts, ensuring a
+          comprehensive confirmation process. Embrace the joy of parenthood with
+          confidence, supported by Tiny Tot Tracker’s reliable assistance every
+          step of the way.
         </p>
       </div>
     </div>
