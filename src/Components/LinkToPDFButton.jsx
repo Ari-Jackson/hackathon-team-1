@@ -1,4 +1,4 @@
-const Email = () => {
+const LinkToPDFButton = () => {
     return (
         <div>
             <a href='https://www.michaeltaymormd.com/storage/app/media/forms/master-set-asq.pdf' target="_blank" rel="noopener noreferrer">
@@ -8,4 +8,4 @@ const Email = () => {
     );
 }
 
-export default Email
+export default LinkToPDFButton
