@@ -5,6 +5,7 @@ import scoreCard from "../data/FormScores.json";
 import { useLocation } from "react-router-dom";
 import { FaPerson, FaPersonWalking, FaPersonRunning } from "react-icons/fa6";
 import Map from "./Map";
+import LinkToPDFButton from "./LinkToPDFButton";
 
 export default function Form() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -71,7 +72,7 @@ const SectionTemp = ({
 
   return (
     <>
-      <h1 className="text-3xl text-center mb-5 ">{section.title}</h1>
+      <h1 className="text-3xl mt-10 text-center mb-5 ">{section.title}</h1>
       <form
         className="grid grid-cols-3 gap-4 mx-auto ml-24"
         onSubmit={handleSubmit((data) => {
@@ -157,7 +158,7 @@ const SectionTemp = ({
 
         <input
           type="submit"
-          className="mb-10 mt-3 rounded-md -ml-24 bg-blue-500 p-3 border text-white hover:cursor-pointer"
+          className="-ml-24 hover:cursor-pointer w-full py-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto"
         />
       </form>
     </>
@@ -229,11 +230,10 @@ const OverallSectionTemp = ({
         })}
         <div></div>
         <div></div>
-
         <input
           type="submit"
-          className="rounded-md bg-blue-500 -ml-7 p-3 border text-white hover:cursor-pointer"
-        />
+          className="-ml-7 hover:cursor-pointer w-full py-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto"
+        ></input>
       </form>
     </>
   );
@@ -288,6 +288,7 @@ const Result = ({ scores, formData, scoreCard }) => {
         <div className="w-fit block mt-40 my-10 ml-40 rounded-md">
           <h2 className="text-xl mb-2"> NYC Pre-K Providers </h2>
           <Map />
+          <LinkToPDFButton />
         </div>
       </main>
     </>
