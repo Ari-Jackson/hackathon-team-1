@@ -3,8 +3,8 @@ export default function Map() {
     <div className="h-screen">
       <div className="grid grid-cols-2 gap-1">
         <div className=" ml-[10%] mt-[10%] rounded-lg shadow-md bg-white h-fit flex grid p-12 ">
-          <h1 className="text-3xl font-extrabold tracking-tight text-[#053560] mt-3">
-            Preschool centers 🛝
+          <h1 className="text-3xl font-extrabold tracking-tight text-[#0065ff] mt-3">
+            Preschool centers 🛝🌳
             </h1>
           <p className="text-xl  tracking-tight text-[#053560] mt-3">
             Preschool centers offer an ideal environment for both children with

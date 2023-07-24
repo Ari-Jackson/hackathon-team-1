@@ -224,7 +224,7 @@ const DisplayResultsCards30 = () => {
     const renderedCards = cardsToDisplay.map((card) => (
       <div className="bg-white hover:bg-yellow-100 rounded-lg shadow-md" key={card.card}>
         <div >
-          <h2 className="pl-3 bold">{card.card}</h2>
+          <h2 className="pl-3 bold text-[#0065ff]">{card.card}</h2>
           <p className="p-12 hover:text-lg">{card.description}</p>
         </div>
       </div>

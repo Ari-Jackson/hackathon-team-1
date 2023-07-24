@@ -5,6 +5,7 @@ import scoreCard from "../data/FormScores.json";
 import { useLocation } from "react-router-dom";
 import { FaPerson, FaPersonWalking, FaPersonRunning } from "react-icons/fa6";
 import Map from "./Map";
+import { Link } from "react-router-dom";
 
 export default function Form() {
   const [currentSection, setCurrentSection] = useState(1);
@@ -282,12 +283,35 @@ const Result = ({ scores, formData, scoreCard }) => {
   return (
     <>
       <main className=" w-full min-h-screen">
-        <h1 className="text-3xl text-cente my-5 mx-10">Results</h1>
+        <h1 className=" my-[5%] text-center text-4xl font-extrabold tracking-tight text-[#0065ff]">Results</h1>
 
         <div className="flex space-x-10 mx-10">{result}</div>
-        <div className="w-fit block mt-40 my-10 ml-40 rounded-md">
-          <h2 className="text-xl mb-2"> NYC Pre-K Providers </h2>
-          <Map />
+        <p className="text-center w-full py-[10%] text-3xl font-extrabold tracking-tight text-[#0065ff]">
+        These activities are designed to provide families with fun ways to foster growth<br/> and support their child in various domains of development.
+        </p>
+        <div className="w-[50%] ml-40 rounded-md">
+          <ul className="mx-[30%] ">
+          <li className=" py-4 my-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
+        <Link to="/map">
+        Map of Pre-K providers
+        </Link></li>
+       <li className=" py-4 my-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
+        <Link to="/map">
+        Map of Pre-K providers
+        </Link></li>
+        <li className=" py-4 my-4  text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
+        <Link to="/children-30-36-months">
+        For Children 30-36 months
+        </Link></li>
+        <li className=" py-4 my-4  text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
+        <Link to="/children-36-38-months">
+        For Children 36-48 months
+        </Link></li>
+        <li className=" py-4 my-4  text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto">
+        <Link to="/children-48-60-months">
+        For Children 48-60 months
+        </Link></li>
+      </ul>
         </div>
       </main>
     </>
