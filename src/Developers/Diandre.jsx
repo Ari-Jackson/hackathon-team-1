@@ -29,12 +29,12 @@ const Diandre = () => {
         job as a software engineer.
         <br /> <br />
         Check out my{" "}
-        <a href="https://www.linkedin.com/in/diandre-miller/" target="_blank" rel="noreferrer">
+        <a className="text-[#0065ff] font-bold" href="https://www.linkedin.com/in/diandre-miller/" target="_blank" rel="noreferrer">
           {" "}
           LinkedIn
         </a>{" "}
         and{" "}
-        <a href="https://github.com/DiandreMiller" target="_blank" rel="noreferrer">
+        <a className="text-[#0065ff] font-bold" href="https://github.com/DiandreMiller" target="_blank" rel="noreferrer">
           {" "}
           GitHub{" "}
         </a>{" "}

@@ -18,8 +18,8 @@ const Ari = () => {
             have a special place in my heart for training my one-too-many dogs. 
             <br /> <br />
             Check out my{" "}
-            <a href="https://github.com/Ari-Jackson" target="blank">GitHub</a> and{" "}
-            <a href='https://www.linkedin.com/in/ari-j-jackson/' target="blank">LinkedIn</a>
+            <a className="text-[#0065ff] font-bold" href="https://github.com/Ari-Jackson" target="blank">GitHub</a> and{" "}
+            <a className="text-[#0065ff]  font-bold" href='https://www.linkedin.com/in/ari-j-jackson/' target="blank">LinkedIn</a>
             <br /> <br /> <br /> <br /> <br />
             
         </p>
