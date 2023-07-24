@@ -43,11 +43,9 @@ const DisplayResultsCards36 = () => {
         },
         {
             card: 4,
-            description: `Before bedtime, look at a maga-
-            zine or children's book together.
-            Ask your child to point to pic-
-            tures as you name them, such as
-            "Where is the truck?" Be silly
+            description: `Before bedtime, look at a magazine or 
+            children's book together.Ask your child to point to pictures as 
+            you name them, such as "Where is the truck?" Be silly
             and ask him to point with an
             elbow or foot. Ask him to show
             you something that is round or
@@ -100,9 +98,8 @@ const DisplayResultsCards36 = () => {
         },
         {
             card: 9,
-            description:`Talk about the number 3. Read sto-
-            ries that have 3 in them (The Three
-            Billy Goats Gruff, Three Little Pigs,
+            description:`Talk about the number 3. Read stories that have 3 in 
+            them (The Three Billy Goats Gruff, Three Little Pigs,
             The Three Bears). Encourage your
             child to count to 3 using similar ob-
             jects (rocks, cards, blocks). Talk
@@ -126,8 +123,7 @@ const DisplayResultsCards36 = () => {
         {
             card: 11,
             description: `When your child is getting
-            dressed, encourage her to prac-
-            tice with buttons and zippers.
+            dressed, encourage her to practice with buttons and zippers.
             Play a game of Peekaboo to
             show her how buttons go
             through the holes. Pretend the
@@ -141,8 +137,7 @@ const DisplayResultsCards36 = () => {
             your child to do two or three fun
             or unusual things in a row. For
             example, ask him to "Touch
-            your elbow and then run in a cir-
-            cle" or "Find a book and put it
+            your elbow and then run in a circle" or "Find a book and put it
             on your head."`
         },
         {
@@ -162,8 +157,7 @@ const DisplayResultsCards36 = () => {
         {
             card: 14,
             description: `Listen for sounds. Find a cozy
-            spot, and sit with your child. Lis-
-            ten and identify all of the
+            spot, and sit with your child. Listen and identify all of the
             sounds that you hear. Ask your
             child if it is a loud or soft sound.
             Try this activity inside and out-
@@ -191,13 +185,12 @@ const DisplayResultsCards36 = () => {
             where you follow his lead by
             copying exactly what he draws.
             Next, encourage your child to
-            copy your drawings, such as cir-
-            cles or straight lines.`
+            copy your drawings, such as circles or straight lines.`
         },
         {
             card: 17,
-            description: `When reading or telling a famil-
-            iar story for bedtime, stop and
+            description: `When reading or telling a 
+            familiar story for bedtime, stop and
             leave out a word. Wait for your
             child to "fill in the blank.`
         }, 
