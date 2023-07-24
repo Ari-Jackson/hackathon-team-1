@@ -1,15 +1,21 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import data from "../data/36Month.json";
+import data from "../data/FormQuestions.json";
+import scoreCard from "../data/FormScores.json";
+import { useLocation } from "react-router-dom";
+import { FaPerson } from "react-icons/fa";
 
 export default function Form() {
   const [currentSection, setCurrentSection] = useState(1);
   const [formData, setFormData] = useState({});
   const [scores, setScores] = useState();
+  const { search } = useLocation();
+
+  let section = search.slice(-2);
 
   return (
     <>
-      {data.sections.map((section, i) => {
+      {data[section].map((section, i) => {
         if (section.title !== "Overall") {
           return (
             <>
@@ -40,6 +46,9 @@ export default function Form() {
           );
         }
       })}
+      {currentSection === 7 && (
+        <Result key={350} scores={scores} formData={formData} />
+      )}
     </>
   );
 }
@@ -215,6 +224,45 @@ const OverallSectionTemp = ({
           className="rounded-md bg-blue-500 p-3 border text-white hover:cursor-pointer"
         />
       </form>
+    </>
+  );
+};
+
+const Result = ({ scores, formData }) => {
+  const { search } = useLocation();
+  const result = [];
+  let section = search.slice(-2);
+
+  for (let key in scores) {
+    result.push(
+      <h1 className="block text-xl">
+        {key}: {scores[key]} / 60
+      </h1>,
+      <p>
+        {scores[key] > scoreCard[section][key] ? (
+          "You're child development appears to be on schedule"
+        ) : scores[key] > scoreCard[section][key] - 10 ? (
+          "Provide learning activities and monitor"
+        ) : (
+          <FaPerson />
+        )}
+      </p>,
+      <p className="mb-5 pt-2">
+        {scores[key] > scoreCard[section][key]
+          ? "You're child development appears to be on schedule"
+          : scores[key] > scoreCard[section][key] - 10
+          ? "Provide learning activities and monitor"
+          : "Further assessment with a professions may be needed"}
+      </p>,
+    );
+  }
+
+  console.log(scores, scoreCard[section], formData);
+
+  return (
+    <>
+      <h1 className="text-3xl text-cente my-5 ">Results</h1>
+      {result}
     </>
   );
 };
