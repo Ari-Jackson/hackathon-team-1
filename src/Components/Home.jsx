@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import toddlerImg from "../assets/DALL·E_toddler.png";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -10,11 +11,7 @@ export default function Home() {
     <div className=" flex flex-col mt-[5%] mb-52">
       <div className="flex flex-col mt-[10%] md:flex-row flex-grow justify-center">
         <div className="">
-          <img
-            className="w-64 flex-grow"
-            src="src/assets/DALL·E_toddler.png"
-            alt="banner"
-          />
+          <img className="w-64 flex-grow" src={toddlerImg} alt="banner" />
         </div>
         <div className="bg-white  rounded-r-lg shadow-md w-[18%] pl-6">
           <h1 className="w-[20%] text-5xl font-extrabold tracking-tight text-[#0065ff]  p-4 flex hover:animate-shake ">
