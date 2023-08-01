@@ -12,11 +12,15 @@ Tiny Tots Tracker is a user-friendly app specially designed to empower parents b
 **Resources and Guidance** - Tiny Tots Tracker acknowledges that self-evaluation is not a substitute for professional assessments. As such, the app will offer curated resources and guidance, connecting parents with trusted experts for a comprehensive confirmation process.
 
 ### How to Use Tiny Tot Tracker
-Sign Up or Log In: Create an account or log in using your existing credentials to access the app's features. Otherwise, continue as guest but your information will not be saved.
-Add Your Child: Input your child's birthday to access the assessment. Make sure you collect all needed materials.
-Take the Assessment: Complete the simple self-evaluation process, where you will be asked a series of questions and complete tasks related to your child's milestones.
-Receive Your Results: Once the assessment is complete, Tiny Tots Tracker will generate an informative report with your child's progress summary results.
-Explore Resources: Based on your child's results, the app will provide resources and guidance to help you find trusted experts for further evaluation and support.
+1. Sign Up or Log In: Create an account or log in using your existing credentials to access the app's features. Otherwise, continue as guest but your information will not be saved.
+
+2. Add Your Child: Input your child's birthday to access the assessment. Make sure you collect all needed materials.
+
+3. Take the Assessment: Complete the simple self-evaluation process, where you will be asked a series of questions and complete tasks related to your child's milestones.
+
+4. Receive Your Results: Once the assessment is complete, Tiny Tots Tracker will generate an informative report with your child's progress summary results.
+
+5. Explore Resources: Based on your child's results, the app will provide resources and guidance to help you find trusted experts for further evaluation and support.
 
 ##  Technologies Used
 Tiny Tot Tracker leverages the following technologies and frameworks:
@@ -30,5 +34,5 @@ Tiny Tot Tracker leverages the following technologies and frameworks:
 
 ## Installing this repo
  - [ ] `git clone` this repo
- - [ ] cd into the file and `npm install`
+ - [ ] go into the file and run `npm install`
  - [ ] run `npm run dev` to start a development server
