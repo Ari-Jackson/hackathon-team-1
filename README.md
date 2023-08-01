@@ -11,7 +11,7 @@ Tiny Tots Tracker is a user-friendly app specially designed to empower parents b
 
 **Resources and Guidance** - Tiny Tots Tracker acknowledges that self-evaluation is not a substitute for professional assessments. As such, the app will offer curated resources and guidance, connecting parents with trusted experts for a comprehensive confirmation process.
 
-### How to Use MilestoneTrack
+### How to Use Tiny Tot Tracker
 Sign Up or Log In: Create an account or log in using your existing credentials to access the app's features. Otherwise, continue as guest but your information will not be saved.
 Add Your Child: Input your child's birthday to access the assessment. Make sure you collect all needed materials.
 Take the Assessment: Complete the simple self-evaluation process, where you will be asked a series of questions and complete tasks related to your child's milestones.
