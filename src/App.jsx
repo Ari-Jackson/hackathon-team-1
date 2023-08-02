@@ -42,10 +42,11 @@ import Header from "./Commons/Header";
 
 export default function App() {
   return (
-    <div className="bg-gradient-to-r from-[#ccfff0]  to-[#c2fcff] my-0  h-[100%]">
+    <div className="bg-gradient-to-r from-[#ccfff0]  to-[#c2fcff] my-0  h-[100%] m-0">
       <BrowserRouter>
         <Header />
         <NavBar />
+     
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resources" element={<Resources />} />
@@ -60,9 +61,10 @@ export default function App() {
           <Route path="/children-30-36-months" element={<RangeFirst />} />
           <Route path="/children-36-48-months" element={<RangeSecond />} />
           <Route path="/children-48-60-months" element={<RangeThird />} />
-
           <Route path="/display-cards" element={<DisplayResultsCards30 />} />
         </Routes>
+      
+        <div className="h-32"></div>
         <Footer />
       </BrowserRouter>
     </div>

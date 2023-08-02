@@ -10,10 +10,10 @@ export default function SignIn() {
 
   };
   return (
-    <div className="grid grid-cols-2 gap-1 mt-12">
-      <div className=" items-center justify-center px-6 py-8 md:h-screen lg:py-0 w-[50%] mx-auto">
-        <div className=" shadow  md:mt-0 sm:max-w-md xl:p-0">
-          <div className="p-6 space-y-4 md:space-y-6 sm:p-8 bg-white rounded-lg">
+    <div className="grid grid-cols-2 gap-1 mt-12 pb-12">
+      <div className=" items-center justify-center px-6 py-8 lg:py-0 w-[50%] mx-auto">
+        <div className="  ">
+          <div className="p-6  sm:p-8 bg-white rounded-lg">
             <h1 className="text-3xl font-bold leading-tight tracking-tight text-center text-[#0065ff]">
               Create an account
             </h1>
@@ -93,7 +93,7 @@ export default function SignIn() {
               </div>
               <button
                 type="submit"
-                className=" p-4 text-lg text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 ml-4"
+                className="text-md p-auto text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 ml-4"
               >
                 Create an account
               </button>
@@ -109,7 +109,7 @@ export default function SignIn() {
             </form>
             <button
               onClick={handleClick}
-              className="w-full py-4 text-xl text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto"
+              className="w-full py-2 text-md text-center text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 md:w-auto"
             >
               Continue as a Guest
             </button>

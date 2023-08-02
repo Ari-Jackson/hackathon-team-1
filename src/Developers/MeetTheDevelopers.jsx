@@ -52,7 +52,7 @@ const MeetTheDevelopers = () => {
               <img
                 src={TaylorAndDaughter}
                 alt="Taylor Gardening"
-                width="600px"
+                width="500px"
               />
             </div>
           </div>
