@@ -9,8 +9,8 @@ export default function Disclaimer() {
     }
 
   return (
-    <div className="h-screen">
-      <div className="mx-auto mt-[10%] rounded-lg shadow-md bg-white w-[30%] h-[65%] flex grid  p-12">
+    <div className="h-screen mb-12">
+      <div className="mx-auto mt-[10%] rounded-lg shadow-md bg-white w-[30%] h-fit flex grid  p-12">
         <p className=" text-3xl font-extrabold tracking-tight text-[#053560]">
           <div className="text-orange-400 p-0 m-0">&#9888;&#65039;</div>
           <br />
@@ -30,7 +30,7 @@ export default function Disclaimer() {
         >
           Continue &gt;&gt;
         </button>
-      </div>
+      </div>   
     </div>
   );
 }
